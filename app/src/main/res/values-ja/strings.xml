@@ -1,0 +1,18 @@
+<resources>
+    <string name="menu_filter_by_distance">距離でフィルター</string>
+    <string name="venue_detail_image_content_description">会場の画像</string>
+    <string name="my_venue_title">私の会場</string>
+    <string name="venue_list_title">会場リスト</string>
+    <string name="venue_details_title">会場の詳細</string>
+    <string name="navigation_drawer_header_content_description">アプリナビゲーション</string>
+    <string name="added_venue_to_favorites">お気に入りに会場を追加しました</string>
+    <string name="favorites_empty">お気に入りは空です</string>
+    <string name="planted_date">%1$s は %2$s に植わっています</string>
+    <string name="menu_item_share_venue">共有</string>
+    <string name="share_text_venue">%s という植物を「Sunflower」アプリで見てみてください</string>
+
+
+    <!-- Accessibility -->
+    <string name="a11y_venue_item_image">会場の写真</string>
+
+</resources>

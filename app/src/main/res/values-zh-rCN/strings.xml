@@ -1,0 +1,19 @@
+
+<resources>
+    <string name="menu_filter_by_distance">按距离过滤</string>
+    <string name="venue_detail_image_content_description">会场形象</string>
+    <string name="my_venue_title">我的场地</string>
+    <string name="venue_list_title">场地清单</string>
+    <string name="venue_details_title">场地详情</string>
+    <string name="navigation_drawer_header_content_description">导航抽屉页眉</string>
+    <string name="added_venue_to_favorites">将场地添加到收藏夹</string>
+    <string name="favorites_empty">您的收藏夹为空</string>
+    <string name="planted_date">%1$s 种植于 %2$s</string>
+    <string name="menu_item_share_venue">分享</string>
+    <string name="share_text_venue">在Andre的TravelDemoApp中查看％s</string>
+
+
+    <!-- Accessibility -->
+    <string name="a11y_venue_item_image">会场图片</string>
+
+</resources>

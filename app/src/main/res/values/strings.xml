@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Resources that do not require translation -->
+    <string name="app_name" translatable="false">TravelAppDemo</string>
+    <string name="navigation_drawer_header_title" translatable="false">TravelAppDemo</string>
+
+    <!-- Translatable resources -->
+    <string name="menu_filter_by_distance" translation_description="The label for the menu item to filter
+    the displayed venues by distance.">Filter by distance</string>
+    <string name="venue_detail_image_content_description" translation_description="Content description for the header /
+    hero image that is show at the top of the venue detail screen.">Image of venue</string>
+    <string name="my_venue_title" translation_description="Title for the 'My venues' screen where the user can see the list of venues
+    that have been added to their favorites.">My venues</string>
+    <string name="venue_list_title" translation_description="Title for the venue list screen where the user can see a
+    list of venues available to add to their favorites.">Venue list</string>
+    <string name="venue_details_title" translation_description="Title for the venue details screen
+    where the user can see the details for a specific venue.">Venue details</string>
+    <string name="navigation_drawer_header_content_description" translation_description="Content description for the image
+    that is shown at the top of the navigation drawer.">Navigation drawer header logo</string>
+
+    <string name="added_venue_to_favorites" translation_description="Confirmation text that is shown
+    when a user adds a venue to their favorites.">Added venue to favorites</string>
+    <string name="favorites_empty" translation_description="Text that is shown on the 'My Favorites' screen
+    when no venues have been added to the user's favorites">Your favorites is empty</string>
+    <string name="planted_date" translation_description="Text with placeholders that indicates when the plant was planted. Example: 'Sunflower planted on May 24, 2018'.">%1$s planted on %2$s</string>
+    <string name="menu_item_share_venue" translation_description="The label for the Share menu item">Share</string>
+    <string name="share_text_venue" translation_description="The default messaged used
+    when sharing a venue on SNS, etc.">Check out the %s  in Andre\'s TravelDemoApp</string>
+
+
+    <!-- Accessibility -->
+    <string name="a11y_venue_item_image" translation_description="Accessibility text for each of the venue images shown
+     in the 'My Favorites' and 'Venue list' screens.">Picture of venue</string>
+
+
+</resources>

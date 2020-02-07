@@ -1,0 +1,1900 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "5e21c84b1d67cb001b4fcd39"
+  },
+  "response": {
+    "suggestedFilters": {
+      "header": "Tap to show:",
+      "filters": [
+        {
+          "name": "Open now",
+          "key": "openNow"
+        },
+        {
+          "name": "$-$$$$",
+          "key": "price"
+        }
+      ]
+    },
+    "suggestedRadius": 600,
+    "headerLocation": "SoHo",
+    "headerFullLocation": "SoHo, New York",
+    "headerLocationGranularity": "neighborhood",
+    "query": "coffee",
+    "totalResults": 80,
+    "suggestedBounds": {
+      "ne": {
+        "lat": 40.72834653356178,
+        "lng": -73.9956211417092
+      },
+      "sw": {
+        "lat": 40.71982721738103,
+        "lng": -74.005016040871
+      }
+    },
+    "groups": [
+      {
+        "type": "Recommended Places",
+        "name": "recommended",
+        "items": [
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "45e98bacf964a52080431fe3",
+              "name": "MarieBelle",
+              "location": {
+                "address": "484 Broome St",
+                "crossStreet": "btwn W Broadway & Wooster St",
+                "lat": 40.72310132633388,
+                "lng": -74.00247749675871,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72310132633388,
+                    "lng": -74.00247749675871
+                  }
+                ],
+                "distance": 145,
+                "postalCode": "10013",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "484 Broome St (btwn W Broadway & Wooster St)",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1d0941735",
+                  "name": "Dessert Shop",
+                  "pluralName": "Dessert Shops",
+                  "shortName": "Desserts",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/dessert_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "delivery": {
+                "id": "488596",
+                "url": "https://www.seamless.com/menu/marie-belle-new-york-484-broome-st-new-york/488596?affiliate=1131&utm_source=foursquare-affiliate-network&utm_medium=affiliate&utm_campaign=1131&utm_content=488596",
+                "provider": {
+                  "name": "seamless",
+                  "icon": {
+                    "prefix": "https://fastly.4sqi.net/img/general/cap/",
+                    "sizes": [
+                      40,
+                      50
+                    ],
+                    "name": "/delivery_provider_seamless_20180129.png"
+                  }
+                }
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "venuePage": {
+                "id": "81170724"
+              }
+            },
+            "referralId": "e-0-45e98bacf964a52080431fe3-0"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "56cb2d99498eb620bee31423",
+              "name": "Rapha NYC",
+              "location": {
+                "address": "159 Prince St",
+                "lat": 40.72596825325445,
+                "lng": -74.00122621589483,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72596825325445,
+                    "lng": -74.00122621589483
+                  }
+                ],
+                "distance": 191,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "159 Prince St",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d103951735",
+                  "name": "Clothing Store",
+                  "pluralName": "Clothing Stores",
+                  "shortName": "Apparel",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/apparel_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-56cb2d99498eb620bee31423-1"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "573498df498e6df2eb8b36a7",
+              "name": "La Colombe Torrefaction",
+              "location": {
+                "address": "154 Prince St",
+                "crossStreet": "btwn W Broadway & Thompson",
+                "lat": 40.72581964106336,
+                "lng": -74.00119185447693,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72581964106336,
+                    "lng": -74.00119185447693
+                  }
+                ],
+                "distance": 176,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "154 Prince St (btwn W Broadway & Thompson)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1e0931735",
+                  "name": "Coffee Shop",
+                  "pluralName": "Coffee Shops",
+                  "shortName": "Coffee Shop",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-573498df498e6df2eb8b36a7-2"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "53ab0af5498e13bffddb8d96",
+              "name": "Pi Greek Bakerie",
+              "location": {
+                "address": "512 Broome St",
+                "crossStreet": "at Thompson St",
+                "lat": 40.723515651165286,
+                "lng": -74.00344360363695,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.723515651165286,
+                    "lng": -74.00344360363695
+                  }
+                ],
+                "distance": 163,
+                "postalCode": "10013",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "512 Broome St (at Thompson St)",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16a941735",
+                  "name": "Bakery",
+                  "pluralName": "Bakeries",
+                  "shortName": "Bakery",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bakery_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "delivery": {
+                "id": "304388",
+                "url": "https://www.seamless.com/menu/pi-bakerie-and-eaterie-512-broome-st-new-york/304388?affiliate=1131&utm_source=foursquare-affiliate-network&utm_medium=affiliate&utm_campaign=1131&utm_content=304388",
+                "provider": {
+                  "name": "seamless",
+                  "icon": {
+                    "prefix": "https://fastly.4sqi.net/img/general/cap/",
+                    "sizes": [
+                      40,
+                      50
+                    ],
+                    "name": "/delivery_provider_seamless_20180129.png"
+                  }
+                }
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "venuePage": {
+                "id": "90381820"
+              }
+            },
+            "referralId": "e-0-53ab0af5498e13bffddb8d96-3"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "5703f9a5cd1014db975d2d21",
+              "name": "About Coffee",
+              "location": {
+                "address": "71 Sullivan St",
+                "crossStreet": "btwn Spring & Broome St",
+                "lat": 40.724445530905136,
+                "lng": -74.00389283895491,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.724445530905136,
+                    "lng": -74.00389283895491
+                  }
+                ],
+                "distance": 177,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "71 Sullivan St (btwn Spring & Broome St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1e0931735",
+                  "name": "Coffee Shop",
+                  "pluralName": "Coffee Shops",
+                  "shortName": "Coffee Shop",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-5703f9a5cd1014db975d2d21-4"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4f36418ee4b017ad79b8e8a2",
+              "name": "Georgetown Cupcake",
+              "location": {
+                "address": "111 Mercer St",
+                "crossStreet": "btwn Spring St & Prince St",
+                "lat": 40.72373721901756,
+                "lng": -73.99933920166615,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72373721901756,
+                    "lng": -73.99933920166615
+                  }
+                ],
+                "distance": 216,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "111 Mercer St (btwn Spring St & Prince St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1bc941735",
+                  "name": "Cupcake Shop",
+                  "pluralName": "Cupcake Shops",
+                  "shortName": "Cupcakes",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cupcakes_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "venuePage": {
+                "id": "63138710"
+              }
+            },
+            "referralId": "e-0-4f36418ee4b017ad79b8e8a2-5"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4a942a25f964a520972020e3",
+              "name": "Ground Support",
+              "location": {
+                "address": "399 W Broadway",
+                "crossStreet": "btwn Spring & Broome St",
+                "lat": 40.724292163165124,
+                "lng": -74.00212009222999,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.724292163165124,
+                    "lng": -74.00212009222999
+                  }
+                ],
+                "distance": 27,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "399 W Broadway (btwn Spring & Broome St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1e0931735",
+                  "name": "Coffee Shop",
+                  "pluralName": "Coffee Shops",
+                  "shortName": "Coffee Shop",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "venuePage": {
+                "id": "38325963"
+              }
+            },
+            "referralId": "e-0-4a942a25f964a520972020e3-6"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "50e6eae5e4b06de013260a31",
+              "name": "Bar Ciccio Alimentari",
+              "location": {
+                "address": "190 Avenue of the Americas",
+                "crossStreet": "Spring St",
+                "lat": 40.726375,
+                "lng": -74.003369,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.726375,
+                    "lng": -74.003369
+                  }
+                ],
+                "distance": 266,
+                "postalCode": "10013",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "190 Avenue of the Americas (Spring St)",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d110941735",
+                  "name": "Italian Restaurant",
+                  "pluralName": "Italian Restaurants",
+                  "shortName": "Italian",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/italian_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-50e6eae5e4b06de013260a31-7"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "5a1ed5c967e5f2347f77664b",
+              "name": "west~bourne",
+              "location": {
+                "address": "137 Sullivan St",
+                "crossStreet": "btwn Prince St & W Houston St",
+                "lat": 40.72693188943623,
+                "lng": -74.0020217484272,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72693188943623,
+                    "lng": -74.0020217484272
+                  }
+                ],
+                "distance": 293,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "137 Sullivan St (btwn Prince St & W Houston St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16d941735",
+                  "name": "Café",
+                  "pluralName": "Cafés",
+                  "shortName": "Café",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-5a1ed5c967e5f2347f77664b-8"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "571a6c25498e64cbcc8b3b6c",
+              "name": "JOE & THE JUICE",
+              "location": {
+                "address": "161 Prince Street",
+                "lat": 40.725983351525194,
+                "lng": -74.00129767836906,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.725983351525194,
+                    "lng": -74.00129767836906
+                  }
+                ],
+                "distance": 192,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "161 Prince Street",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d112941735",
+                  "name": "Juice Bar",
+                  "pluralName": "Juice Bars",
+                  "shortName": "Juice Bar",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/juicebar_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-571a6c25498e64cbcc8b3b6c-9"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "515f81d0e4b05d6decaaed19",
+              "name": "Little Prince",
+              "location": {
+                "address": "199 Prince St",
+                "crossStreet": "btwn Macdougal & Sullivan St",
+                "lat": 40.72679,
+                "lng": -74.00275,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72679,
+                    "lng": -74.00275
+                  }
+                ],
+                "distance": 288,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "199 Prince St (btwn Macdougal & Sullivan St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d10c941735",
+                  "name": "French Restaurant",
+                  "pluralName": "French Restaurants",
+                  "shortName": "French",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/french_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "venuePage": {
+                "id": "82733366"
+              }
+            },
+            "referralId": "e-0-515f81d0e4b05d6decaaed19-10"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "56d9970c498e2e8d3de7ec0e",
+              "name": "Olive's",
+              "location": {
+                "address": "192 Prince St",
+                "lat": 40.72651634055232,
+                "lng": -74.00238117768983,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72651634055232,
+                    "lng": -74.00238117768983
+                  }
+                ],
+                "distance": 251,
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "192 Prince St",
+                  "New York, NY",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1e0931735",
+                  "name": "Coffee Shop",
+                  "pluralName": "Coffee Shops",
+                  "shortName": "Coffee Shop",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-56d9970c498e2e8d3de7ec0e-11"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4cd1ae08bcab95217f073a15",
+              "name": "Harney & Sons",
+              "location": {
+                "address": "433 Broome St",
+                "crossStreet": "btwn Broadway & Crosby St",
+                "lat": 40.721451,
+                "lng": -73.999394,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.721451,
+                    "lng": -73.999394
+                  }
+                ],
+                "distance": 376,
+                "postalCode": "10013",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "433 Broome St (btwn Broadway & Crosby St)",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1dc931735",
+                  "name": "Tea Room",
+                  "pluralName": "Tea Rooms",
+                  "shortName": "Tea Room",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/tearoom_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "venuePage": {
+                "id": "37057203"
+              }
+            },
+            "referralId": "e-0-4cd1ae08bcab95217f073a15-12"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4a5cc07ff964a52081bc1fe3",
+              "name": "Soup Kiosk",
+              "location": {
+                "address": "94 Prince St",
+                "crossStreet": "at Mercer St",
+                "lat": 40.72461707596741,
+                "lng": -73.99853617707004,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72461707596741,
+                    "lng": -73.99853617707004
+                  }
+                ],
+                "distance": 277,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "94 Prince St (at Mercer St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1dd931735",
+                  "name": "Soup Place",
+                  "pluralName": "Soup Places",
+                  "shortName": "Soup",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/soup_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-4a5cc07ff964a52081bc1fe3-13"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "562d0e34498e348022841311",
+              "name": "Summers Juice & Coffee",
+              "location": {
+                "address": "169 Thompson St Frnt B",
+                "lat": 40.72763983514445,
+                "lng": -74.00031578572107,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72763983514445,
+                    "lng": -74.00031578572107
+                  }
+                ],
+                "distance": 392,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "169 Thompson St Frnt B",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16d941735",
+                  "name": "Café",
+                  "pluralName": "Cafés",
+                  "shortName": "Café",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "delivery": {
+                "id": "318848",
+                "url": "https://www.seamless.com/menu/summers-soho-169-thompson-st-ste-b-new-york/318848?affiliate=1131&utm_source=foursquare-affiliate-network&utm_medium=affiliate&utm_campaign=1131&utm_content=318848",
+                "provider": {
+                  "name": "seamless",
+                  "icon": {
+                    "prefix": "https://fastly.4sqi.net/img/general/cap/",
+                    "sizes": [
+                      40,
+                      50
+                    ],
+                    "name": "/delivery_provider_seamless_20180129.png"
+                  }
+                }
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-562d0e34498e348022841311-14"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "589c7ca37b43b441e3ac3ef8",
+              "name": "Banter",
+              "location": {
+                "address": "169 Sullivan St",
+                "lat": 40.7279592919172,
+                "lng": -74.00120508994551,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.7279592919172,
+                    "lng": -74.00120508994551
+                  }
+                ],
+                "distance": 410,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "169 Sullivan St",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16d941735",
+                  "name": "Café",
+                  "pluralName": "Cafés",
+                  "shortName": "Café",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "delivery": {
+                "id": "383917",
+                "url": "https://www.seamless.com/menu/banter-169-sullivan-st-new-york/383917?affiliate=1131&utm_source=foursquare-affiliate-network&utm_medium=affiliate&utm_campaign=1131&utm_content=383917",
+                "provider": {
+                  "name": "seamless",
+                  "icon": {
+                    "prefix": "https://fastly.4sqi.net/img/general/cap/",
+                    "sizes": [
+                      40,
+                      50
+                    ],
+                    "name": "/delivery_provider_seamless_20180129.png"
+                  }
+                }
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-589c7ca37b43b441e3ac3ef8-15"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "5cbf6a44da2e00002c46c6b3",
+              "name": "Now or Never",
+              "location": {
+                "address": "30 Grand St",
+                "lat": 40.722844,
+                "lng": -74.004589,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.722844,
+                    "lng": -74.004589
+                  }
+                ],
+                "distance": 285,
+                "postalCode": "10013",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "30 Grand St",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16d941735",
+                  "name": "Café",
+                  "pluralName": "Cafés",
+                  "shortName": "Café",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-5cbf6a44da2e00002c46c6b3-16"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4b9d51b9f964a52038a336e3",
+              "name": "Nespresso Boutique",
+              "location": {
+                "address": "92 Prince St",
+                "crossStreet": "at Mercer St",
+                "lat": 40.72458,
+                "lng": -73.99847,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72458,
+                    "lng": -73.99847
+                  }
+                ],
+                "distance": 282,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "92 Prince St (at Mercer St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1e0931735",
+                  "name": "Coffee Shop",
+                  "pluralName": "Coffee Shops",
+                  "shortName": "Coffee Shop",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-4b9d51b9f964a52038a336e3-17"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "3fd66200f964a520d7e61ee3",
+              "name": "Felix",
+              "location": {
+                "address": "340 W Broadway",
+                "crossStreet": "at Grand St.",
+                "lat": 40.72244564074977,
+                "lng": -74.00381820746068,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72244564074977,
+                    "lng": -74.00381820746068
+                  }
+                ],
+                "distance": 267,
+                "postalCode": "10013",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "340 W Broadway (at Grand St.)",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d10c941735",
+                  "name": "French Restaurant",
+                  "pluralName": "French Restaurants",
+                  "shortName": "French",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/french_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "venuePage": {
+                "id": "87314284"
+              }
+            },
+            "referralId": "e-0-3fd66200f964a520d7e61ee3-18"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "3fd66200f964a520b9ea1ee3",
+              "name": "Cupping Room Cafe",
+              "location": {
+                "address": "359 W Broadway",
+                "crossStreet": "Grand & Broome",
+                "lat": 40.72322438908681,
+                "lng": -74.00289253714772,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72322438908681,
+                    "lng": -74.00289253714772
+                  }
+                ],
+                "distance": 151,
+                "postalCode": "10013",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "359 W Broadway (Grand & Broome)",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1c4941735",
+                  "name": "Restaurant",
+                  "pluralName": "Restaurants",
+                  "shortName": "Restaurant",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "delivery": {
+                "id": "22103",
+                "url": "https://www.seamless.com/menu/cupping-room-cafe-359-w-broadway-ave-new-york/22103?affiliate=1131&utm_source=foursquare-affiliate-network&utm_medium=affiliate&utm_campaign=1131&utm_content=22103",
+                "provider": {
+                  "name": "seamless",
+                  "icon": {
+                    "prefix": "https://fastly.4sqi.net/img/general/cap/",
+                    "sizes": [
+                      40,
+                      50
+                    ],
+                    "name": "/delivery_provider_seamless_20180129.png"
+                  }
+                }
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "venuePage": {
+                "id": "35406064"
+              }
+            },
+            "referralId": "e-0-3fd66200f964a520b9ea1ee3-19"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "3fd66200f964a52020e61ee3",
+              "name": "Housing Works Bookstore Cafe",
+              "location": {
+                "address": "126 Crosby St",
+                "crossStreet": "btwn Prince & E Houston St",
+                "lat": 40.72467539483391,
+                "lng": -73.9966368227625,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72467539483391,
+                    "lng": -73.9966368227625
+                  }
+                ],
+                "distance": 437,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "126 Crosby St (btwn Prince & E Houston St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16d941735",
+                  "name": "Café",
+                  "pluralName": "Cafés",
+                  "shortName": "Café",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "venuePage": {
+                "id": "33125318"
+              }
+            },
+            "referralId": "e-0-3fd66200f964a52020e61ee3-20"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "3fd66200f964a520d5e91ee3",
+              "name": "Le Pain Quotidien",
+              "location": {
+                "address": "100 Grand St",
+                "crossStreet": "at Mercer St.",
+                "lat": 40.72150631083389,
+                "lng": -74.00155219262501,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72150631083389,
+                    "lng": -74.00155219262501
+                  }
+                ],
+                "distance": 311,
+                "postalCode": "10013",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "100 Grand St (at Mercer St.)",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16a941735",
+                  "name": "Bakery",
+                  "pluralName": "Bakeries",
+                  "shortName": "Bakery",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bakery_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "delivery": {
+                "id": "467545",
+                "url": "https://www.seamless.com/menu/le-pain-quotidien-soho-100-grand-st-new-york/467545?affiliate=1131&utm_source=foursquare-affiliate-network&utm_medium=affiliate&utm_campaign=1131&utm_content=467545",
+                "provider": {
+                  "name": "seamless",
+                  "icon": {
+                    "prefix": "https://fastly.4sqi.net/img/general/cap/",
+                    "sizes": [
+                      40,
+                      50
+                    ],
+                    "name": "/delivery_provider_seamless_20180129.png"
+                  }
+                }
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-3fd66200f964a520d5e91ee3-21"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4fef2438e4b0f5b9d81b65c9",
+              "name": "Everyman Espresso",
+              "location": {
+                "address": "301 W Broadway",
+                "crossStreet": "at Canal St",
+                "lat": 40.72137,
+                "lng": -74.004377,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72137,
+                    "lng": -74.004377
+                  }
+                ],
+                "distance": 391,
+                "postalCode": "10013",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "301 W Broadway (at Canal St)",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1e0931735",
+                  "name": "Coffee Shop",
+                  "pluralName": "Coffee Shops",
+                  "shortName": "Coffee Shop",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-4fef2438e4b0f5b9d81b65c9-22"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "59287470ee71203352bd1df8",
+              "name": "DrSMOOD",
+              "location": {
+                "address": "470 Broome St",
+                "crossStreet": "Greene St",
+                "lat": 40.722858228965784,
+                "lng": -74.00130760978698,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.722858228965784,
+                    "lng": -74.00130760978698
+                  }
+                ],
+                "distance": 165,
+                "postalCode": "10013",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "470 Broome St (Greene St)",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d112941735",
+                  "name": "Juice Bar",
+                  "pluralName": "Juice Bars",
+                  "shortName": "Juice Bar",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/juicebar_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-59287470ee71203352bd1df8-23"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4a9eb0e7f964a520e43a20e3",
+              "name": "Saturdays Surf NYC",
+              "location": {
+                "address": "31 Crosby St",
+                "crossStreet": "btwn Grand & Broome St",
+                "lat": 40.720746,
+                "lng": -73.999346,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.720746,
+                    "lng": -73.999346
+                  }
+                ],
+                "distance": 446,
+                "postalCode": "10013",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "31 Crosby St (btwn Grand & Broome St)",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d103951735",
+                  "name": "Clothing Store",
+                  "pluralName": "Clothing Stores",
+                  "shortName": "Apparel",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/apparel_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-4a9eb0e7f964a520e43a20e3-24"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "49ee02e9f964a52010681fe3",
+              "name": "La Colombe Coffee Roasters",
+              "location": {
+                "address": "270 Lafayette St",
+                "crossStreet": "btwn Prince & W Houston St",
+                "lat": 40.72392928985302,
+                "lng": -73.99631464401689,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72392928985302,
+                    "lng": -73.99631464401689
+                  }
+                ],
+                "distance": 464,
+                "postalCode": "10012",
+                "cc": "US",
+                "neighborhood": "SoHo",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "270 Lafayette St (btwn Prince & W Houston St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1e0931735",
+                  "name": "Coffee Shop",
+                  "pluralName": "Coffee Shops",
+                  "shortName": "Coffee Shop",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-49ee02e9f964a52010681fe3-25"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4f0f47650cd695a0e54cb438",
+              "name": "Jack's Wife Freda",
+              "location": {
+                "address": "224 Lafayette St",
+                "crossStreet": "btwn Kenmare & Spring St",
+                "lat": 40.722022,
+                "lng": -73.997528,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.722022,
+                    "lng": -73.997528
+                  }
+                ],
+                "distance": 440,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "224 Lafayette St (btwn Kenmare & Spring St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1c0941735",
+                  "name": "Mediterranean Restaurant",
+                  "pluralName": "Mediterranean Restaurants",
+                  "shortName": "Mediterranean",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/mediterranean_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-4f0f47650cd695a0e54cb438-26"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "49e63a33f964a52023641fe3",
+              "name": "McNally Jackson Books",
+              "location": {
+                "address": "52 Prince St",
+                "crossStreet": "btwn Lafayette & Mulberry St",
+                "lat": 40.72349313279467,
+                "lng": -73.99604818258018,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72349313279467,
+                    "lng": -73.99604818258018
+                  }
+                ],
+                "distance": 493,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "52 Prince St (btwn Lafayette & Mulberry St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d114951735",
+                  "name": "Bookstore",
+                  "pluralName": "Bookstores",
+                  "shortName": "Bookstore",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/bookstore_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "venuePage": {
+                "id": "45383875"
+              }
+            },
+            "referralId": "e-0-49e63a33f964a52023641fe3-27"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "54417cff498eedc376f8ca5a",
+              "name": "T2 Tea",
+              "location": {
+                "address": "67 Prince St",
+                "crossStreet": "at Crosby St",
+                "lat": 40.723900757486106,
+                "lng": -73.99679034948349,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.723900757486106,
+                    "lng": -73.99679034948349
+                  }
+                ],
+                "distance": 424,
+                "postalCode": "10012",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "67 Prince St (at Crosby St)",
+                  "New York, NY 10012",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1dc931735",
+                  "name": "Tea Room",
+                  "pluralName": "Tea Rooms",
+                  "shortName": "Tea Room",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/tearoom_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-54417cff498eedc376f8ca5a-28"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "5a387ba8838e597257b20ed7",
+              "name": "Roman And Williams GUILD",
+              "location": {
+                "address": "53 Howard St",
+                "crossStreet": "at Mercer St",
+                "lat": 40.72021445902561,
+                "lng": -74.00230129895583,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.72021445902561,
+                    "lng": -74.00230129895583
+                  }
+                ],
+                "distance": 456,
+                "postalCode": "10013",
+                "cc": "US",
+                "neighborhood": "SoHo",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "53 Howard St (at Mercer St)",
+                  "New York, NY 10013",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1f8941735",
+                  "name": "Furniture / Home Store",
+                  "pluralName": "Furniture / Home Stores",
+                  "shortName": "Furniture / Home",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/furniture_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "photos": {
+                "count": 0,
+                "groups": []
+              }
+            },
+            "referralId": "e-0-5a387ba8838e597257b20ed7-29"
+          }
+        ]
+      }
+    ]
+  }
+}

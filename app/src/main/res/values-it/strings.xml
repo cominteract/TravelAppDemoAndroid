@@ -1,0 +1,20 @@
+
+<resources>
+    <string name="app_name">TravelAppDemo</string>
+    <string name="menu_filter_by_distance">Filtra per distanza</string>
+    <string name="venue_detail_image_content_description">Immagine della sede</string>
+    <string name="my_venue_title">I miei locali</string>
+    <string name="venue_list_title">Elenco dei luoghi</string>
+    <string name="venue_details_title">Dettagli del luogo</string>
+    <string name="added_venue_to_favorites">Luogo aggiunto ai preferiti</string>
+    <string name="menu_item_share_venue">Condividi</string>
+    <string name="planted_date">%1$s piantata il %2$s</string>
+    <string name="favorites_empty">I tuoi preferiti sono vuoti</string>
+
+    <string name="navigation_drawer_header_content_description">Logo dell\'intestazione di navigazione</string>
+    <string name="share_text_venue">CDai un\'occhiata alle %s in TravelDemoApp di Andre</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_venue_item_image">Foto della sede</string>
+
+</resources>

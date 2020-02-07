@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener"/>
+        <variable
+            name="venue"
+            type="com.ainsigne.travelappdemo.data.VenueItem"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:onClick="@{clickListener}">
+
+        <ImageView
+            android:id="@+id/venue_item_image"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/venue_item_image_height"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:contentDescription="@string/a11y_venue_item_image"
+            android:scaleType="centerCrop"
+            app:imageFromUrl="@{venue.venue.url()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+<!--        app:imageFromUrl="@{venue.venue.}"-->
+        <TextView
+            android:id="@+id/venue_item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@{venue.venue.name}"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/cardview_light_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/venue_item_image"
+            tools:text="Tomato"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
