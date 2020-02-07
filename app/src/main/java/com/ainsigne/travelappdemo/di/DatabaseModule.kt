@@ -9,6 +9,7 @@ import com.ainsigne.travelappdemo.data.*
 import com.ainsigne.travelappdemo.fake.FakeVenueDetailsRepository
 import com.ainsigne.travelappdemo.fake.FakeVenueFavoritesRepository
 import com.ainsigne.travelappdemo.fake.FakeVenueItemsRepository
+import com.ainsigne.travelappdemo.interfaces.FaveRepository
 import com.ainsigne.travelappdemo.utils.DATABASE_NAME
 import com.ainsigne.travelappdemo.viewmodels.*
 import dagger.Module
@@ -98,8 +99,8 @@ class DatabaseModule(appContext: Context) {
 
     @Provides
     @Singleton
-    fun providesVenueFavoritesFactory() : VenueFavoritesViewModelFactory{
-        return VenueFavoritesViewModelFactory(FakeVenueFavoritesRepository())
+    fun providesVenueFavoritesFactory(venueFaveRepository: VenueFavoritesRepository) : VenueFavoritesViewModelFactory{
+        return VenueFavoritesViewModelFactory(venueFaveRepository)
     }
 
 
