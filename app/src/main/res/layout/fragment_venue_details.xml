@@ -33,7 +33,11 @@
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:title="@{viewModel.venueDetailWithId.name}"
                 app:toolbarId="@+id/toolbar">
-
+                <ImageView
+                    android:id="@+id/img_to_map"
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
                 <ImageView
                     android:id="@+id/detail_image"
                     android:layout_width="match_parent"

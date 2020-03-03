@@ -43,6 +43,31 @@
         <argument
             android:name="venueId"
             app:argType="string" />
+        <argument
+            android:name="origin"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_items_fragment_to_venue_location_fragment"
+            app:destination="@id/venue_location_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
+
+    <fragment
+        android:id="@+id/venue_location_fragment"
+        android:name="com.ainsigne.travelappdemo.ui.VenueLocationFragment"
+        android:label="@string/venue_details_title"
+        tools:layout="@layout/fragment_venue_location">
+        <argument
+            android:name="origin"
+            app:argType="string" />
+        <argument
+            android:name="dest"
+            app:argType="string" />
+    </fragment>
+
 
 </navigation>

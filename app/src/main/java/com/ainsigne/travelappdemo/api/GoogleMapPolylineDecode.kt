@@ -1,5 +1,4 @@
-package com.ainsigne.googlemapdirectionssample.api
-
+package com.ainsigne.travelappdemo.api
 import com.google.android.gms.maps.model.LatLng
 
 

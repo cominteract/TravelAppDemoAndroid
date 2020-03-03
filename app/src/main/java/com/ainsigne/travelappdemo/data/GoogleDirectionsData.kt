@@ -3,7 +3,6 @@ package com.ainsigne.travelappdemo.data
 import android.graphics.Color
 import android.location.Location
 import android.util.Log
-import com.ainsigne.googlemapdirectionssample.api.GoogleMapPolylineDecode
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLng

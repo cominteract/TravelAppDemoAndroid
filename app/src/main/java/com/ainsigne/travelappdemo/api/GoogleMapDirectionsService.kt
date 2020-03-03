@@ -1,8 +1,9 @@
-package com.ainsigne.googlemapdirectionssample.api
+package com.ainsigne.travelappdemo.api
 
 
-import com.ainsigne.googlemapdirectionssample.models.GoogleDirectionsData
-import com.ainsigne.googlemapdirectionssample.utils.API_KEY
+
+import com.ainsigne.travelappdemo.data.GoogleDirectionsData
+import com.ainsigne.travelappdemo.utils.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

@@ -21,6 +21,8 @@ interface DetailRepository {
 interface ItemRepository {
     fun getVenueItems() : LiveData<List<VenueItem>>
 
+    fun getNearbyVenueItems(travelLocations: TravelLocations) : LiveData<List<VenueItem>>
+
     fun getVenueItem(venueName : String) : LiveData<VenueItem>
 
     fun getTravelLocations() : LiveData<List<TravelLocations>>

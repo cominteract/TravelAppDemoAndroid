@@ -1,6 +1,6 @@
-package com.ainsigne.googlemapdirectionssample.api
+package com.ainsigne.travelappdemo.api
 
-import com.ainsigne.googlemapdirectionssample.utils.BASE_API
+import com.ainsigne.travelappdemo.utils.GOOGLE_BASE_API
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -32,7 +32,7 @@ class GoogleMapDirectionsAPI{
 
 
         Retrofit.Builder()
-            .baseUrl(BASE_API).client(client)
+            .baseUrl(GOOGLE_BASE_API).client(client)
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build().create(GoogleMapDirectionsService::class.java)
     }

@@ -12,7 +12,8 @@ data class VenueItem(
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "venueItemId")
     val venueItemId : Int,
     @field:Embedded(prefix = "venue_")
-    val venue : Venue? = null
+    val venue : Venue? = null,
+    var latlng : String = "0.0,0.0"
 
 )
 
@@ -28,6 +29,7 @@ data class TravelLocations(
 data class Venue(val id : String, val name : String,
                  val categories : ArrayList<HashMap<String, Any>>? = null){
     var fakeUrl : String? = ""
+
     fun url() : String?{
         if(!categories.isNullOrEmpty()){
             val icon = categories.get(0)["icon"] as LinkedTreeMap<String,String>
@@ -35,6 +37,8 @@ data class Venue(val id : String, val name : String,
         }
         return fakeUrl
     }
+
+
 }
 
 data class VenueCategories(

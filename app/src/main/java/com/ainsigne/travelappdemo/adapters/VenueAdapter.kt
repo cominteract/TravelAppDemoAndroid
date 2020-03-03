@@ -22,7 +22,7 @@ class VenueAdapter : ListAdapter<VenueItem, VenueAdapter.ViewHolder>(VenueDiffCa
         val venue = getItem(position)
         holder.apply {
             venue.venue?.id?.let {
-                bind(createOnClickListener(it), venue)
+                bind(createOnClickListener(it, venue.latlng), venue)
             }
             itemView.tag = venue
         }
@@ -35,9 +35,9 @@ class VenueAdapter : ListAdapter<VenueItem, VenueAdapter.ViewHolder>(VenueDiffCa
                 LayoutInflater.from(parent.context), parent, false))
     }
 
-    private fun createOnClickListener(venueItemId: String): View.OnClickListener {
+    private fun createOnClickListener(venueItemId: String, latLng : String): View.OnClickListener {
         return View.OnClickListener {
-            val direction = VenueItemsFragmentDirections.actionItemsFragmentToVenueDetailFragment(venueId = venueItemId)
+            val direction = VenueItemsFragmentDirections.actionItemsFragmentToVenueDetailFragment(venueId = venueItemId, origin = latLng)
             it.findNavController().navigate(direction)
         }
     }

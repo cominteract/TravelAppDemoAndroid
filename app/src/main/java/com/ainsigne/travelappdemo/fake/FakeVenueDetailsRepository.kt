@@ -26,7 +26,13 @@ class FakeVenueDetailsRepository :
         if(allDetails.isEmpty()){
             for(i in VenueDescList.indices){
                 val venueDetails = VenueDetails(id = VenueIDSList[i], name = VenueNamesList[i], description = VenueDescList[i])
-                venueDetails.fakeUrl = VenuePicsList[i]
+                venueDetails.bestPhoto = HashMap<String,Any>()
+
+                venueDetails.bestPhoto?.put("suffix",VenuePicsList[i])
+                venueDetails.bestPhoto?.put("width","")
+                venueDetails.bestPhoto?.put("height","")
+                venueDetails.bestPhoto?.put("prefix","")
+
                 allDetails.add(venueDetails)
             }
         }

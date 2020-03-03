@@ -1,5 +1,5 @@
 <resources>
-
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB2EGlCGdsc_LxEoVI2SO7eVZjnaTinPmg</string>
     <!-- Resources that do not require translation -->
     <string name="app_name" translatable="false">TravelAppDemo</string>
     <string name="navigation_drawer_header_title" translatable="false">TravelAppDemo</string>
@@ -31,6 +31,9 @@
     <!-- Accessibility -->
     <string name="a11y_venue_item_image" translation_description="Accessibility text for each of the venue images shown
      in the 'My Favorites' and 'Venue list' screens.">Picture of venue</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

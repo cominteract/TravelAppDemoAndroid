@@ -34,7 +34,10 @@ class VenueFavesAdapter :
         getItem(position).let { venueFave->
             with(holder) {
                 itemView.tag = venueFave
-                bind(createOnClickListener(venueFave.details.id), venueFave)
+                venueFave.details.latLng()?.let {origin ->
+                    bind(createOnClickListener(venueFave.details.id, origin ), venueFave)
+                }
+
             }
         }
     }
@@ -42,10 +45,10 @@ class VenueFavesAdapter :
     /**
      * navigates to [VenueDetailsFragment] on click
      */
-    private fun createOnClickListener(venueId: String): View.OnClickListener {
+    private fun createOnClickListener(venueId: String, origin : String): View.OnClickListener {
         return View.OnClickListener {
                 val direction =
-                       VenueFavoritesFragmentDirections.actionItemsFragmentToVenueDetailFragment(venueId = venueId)
+                       VenueFavoritesFragmentDirections.actionItemsFragmentToVenueDetailFragment(venueId = venueId, origin = origin)
                 it.findNavController().navigate(direction)
         }
     }

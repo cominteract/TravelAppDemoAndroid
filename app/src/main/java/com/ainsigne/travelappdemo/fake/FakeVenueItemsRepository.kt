@@ -33,16 +33,23 @@ class FakeVenueItemsRepository() : ItemRepository {
         generateVenues()
     }
 
+
+
     fun generateVenues() {
         if(allVenues.isEmpty()){
             for(i in VenueDescList.indices){
+
+                var lat = randomLatLng[i].latitude
+                var lon = randomLatLng[i].longitude
                 val venue = Venue(id = VenueIDSList[i] , name = VenueNamesList[i], categories = null)
                 venue.fakeUrl = VenueIconsList[i]
-                val venueItem = VenueItem(venueItemId = VenueIDSList[i].toInt(),venue = venue)
+                val venueItem = VenueItem(venueItemId = VenueIDSList[i].toInt(), venue = venue, latlng = "${lat},${lon}")
                 allVenues.add(venueItem)
             }
         }
     }
+
+
 
     override fun insertVenueItem(venueItem: VenueItem) {
         allVenues.add(venueItem)
@@ -53,6 +60,11 @@ class FakeVenueItemsRepository() : ItemRepository {
     }
 
     override fun insertTravelLocations(travelLocations: TravelLocations) {
+    }
+
+    override fun getNearbyVenueItems(travelLocations: TravelLocations): LiveData<List<VenueItem>> {
+        venueLiveData.value = allVenues.filter { it.latlng == "${travelLocations.lat},${travelLocations.lon}"}
+        return venueLiveData
     }
 
     override fun getVenueItems() : LiveData<List<VenueItem>> {

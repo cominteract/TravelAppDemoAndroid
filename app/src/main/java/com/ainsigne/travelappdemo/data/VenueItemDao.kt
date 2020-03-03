@@ -21,6 +21,9 @@ interface VenueItemDao {
     @Query("SELECT * FROM venue_items WHERE venue_id = :venueId_")
     fun getVenueItemFromId(venueId_: String): LiveData<VenueItem>
 
+    @Query("SELECT * FROM venue_items WHERE latlng = :latlng_")
+    fun getVenueItemFromNearby(latlng_: String): LiveData<List<VenueItem>>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(items: List<VenueItem>)
 

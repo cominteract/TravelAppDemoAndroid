@@ -11,13 +11,13 @@ data class VenueDetails(
     val name: String,
     val description: String? = null,
     //@field:Embedded(prefix = "venuelocation_")
-    val location: HashMap<String,Any>? = null,
+    var location: HashMap<String,Any>? = null,
 
     val likes : HashMap<String,Any>? = null,
 
-    val bestPhoto : HashMap<String,Any>? = null,
+    var bestPhoto : HashMap<String,Any>? = null,
 
-    val contact: HashMap<String,Any>? = null,
+    var contact: HashMap<String,Any>? = null,
     val headerLocation: String? = null
 ) {
 
@@ -25,16 +25,27 @@ data class VenueDetails(
 
     override fun toString() = name
 
-    var fakeUrl : String? = ""
 
     fun url() : String? {
-        if(bestPhoto != null){
-            val width = "${bestPhoto?.get("width")}".toDouble().toInt()
-            val height = "${bestPhoto?.get("height")}".toDouble().toInt()
-
-            return "${bestPhoto.get("prefix")}${width}x${height}${bestPhoto.get("suffix")}"
+        bestPhoto?.let { best ->
+            if(best.containsKey("width") && best["width"] is Double){
+                val width = "${best.get("width")}".toDouble().toInt()
+                val height = "${best.get("height")}".toDouble().toInt()
+                return "${best.get("prefix")}${width}x${height}${best.get("suffix")}"
+            }
+            return best.get("suffix").toString()
         }
-        return fakeUrl
+
+
+        return ""
+    }
+
+    fun latLng() : String?{
+        if(!location.isNullOrEmpty()){
+            return "${location?.get("lat").toString()},${location?.get("lng").toString()}"
+
+        }
+        return ""
     }
 }
 

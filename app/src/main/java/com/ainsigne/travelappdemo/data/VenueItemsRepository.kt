@@ -1,5 +1,8 @@
 package com.ainsigne.travelappdemo.data
 
+import android.util.Log
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.ainsigne.travelappdemo.interfaces.ItemRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -30,6 +33,11 @@ class VenueItemsRepository( var venueItemDao : VenueItemDao) : ItemRepository {
 
 
     override fun getVenueItems() =  venueItemDao.getVenueItems()
+
+    override fun getNearbyVenueItems(travelLocations : TravelLocations): LiveData<List<VenueItem>> {
+
+        return venueItemDao.getVenueItemFromNearby("${travelLocations.lat},${travelLocations.lon}")
+    }
 
     override fun getVenueItem(venueName : String) = venueItemDao.getVenueItem(venueName)
 

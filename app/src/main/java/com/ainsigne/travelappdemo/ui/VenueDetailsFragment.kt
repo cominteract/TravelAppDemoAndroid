@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.observe
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.ainsigne.travelappdemo.MainActivity
 import com.ainsigne.travelappdemo.R
@@ -21,6 +22,7 @@ import com.ainsigne.travelappdemo.fake.FakeVenueFavoritesRepository
 import com.ainsigne.travelappdemo.viewmodels.VenueDetailsViewModel
 import com.ainsigne.travelappdemo.viewmodels.VenueDetailsViewModelFactory
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.fragment_venue_details.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -67,6 +69,7 @@ class VenueDetailsFragment : Fragment() {
                 detailsViewModel.addVenueToFave()
                 Snackbar.make(view, R.string.added_venue_to_favorites, Snackbar.LENGTH_LONG).show()
             }
+
         }
 
         detailsViewModel.venueDetailWithId.observe(viewLifecycleOwner){venueDetail ->
@@ -77,6 +80,14 @@ class VenueDetailsFragment : Fragment() {
                 startAPI()
             } else {
                 shareText =  "Check out the ${venueDetail.name} in Andre\\'s TravelDemoApp"
+
+                img_to_map.setOnClickListener {
+                    venueDetail.latLng()?.let {latLng ->
+                        val direction = VenueDetailsFragmentDirections.actionItemsFragmentToVenueLocationFragment(origin = args.origin , dest = latLng)
+                        it.findNavController().navigate(direction)
+                    }
+                }
+
                 //getString(R.string.share_text_venue, venueDetails.name)
             }
         }
