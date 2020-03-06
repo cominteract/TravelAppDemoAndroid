@@ -9,7 +9,7 @@ import com.ainsigne.travelappdemo.utils.*
 /**
  * Fake repository module for handling data operations for [VenueItem].
  */
-class FakeVenueItemsRepository() : ItemRepository {
+class FakeVenueItemsRepository : ItemRepository {
 
 //    val venueItems : LiveData<Result<LiveData<List<VenueItem>>>> = liveData {
 //        try {
@@ -41,8 +41,15 @@ class FakeVenueItemsRepository() : ItemRepository {
 
                 var lat = randomLatLng[i].latitude
                 var lon = randomLatLng[i].longitude
-                val venue = Venue(id = VenueIDSList[i] , name = VenueNamesList[i], categories = null)
-                venue.fakeUrl = VenueIconsList[i]
+                val venue = Venue(id = VenueIDSList[i] , name = VenueNamesList[i], categories = ArrayList<HashMap<String,Any>>())
+
+                venue.categories?.let {
+                    it[0]["suffix"] = VenuePicsList[i]
+                    it[0]["width"] = ""
+                    it[0]["height"] = ""
+                    it[0].put("prefix","")
+                }
+
                 val venueItem = VenueItem(venueItemId = VenueIDSList[i].toInt(), venue = venue, latlng = "${lat},${lon}")
                 allVenues.add(venueItem)
             }

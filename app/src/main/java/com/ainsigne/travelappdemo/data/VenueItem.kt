@@ -28,15 +28,24 @@ data class TravelLocations(
 
 data class Venue(val id : String, val name : String,
                  val categories : ArrayList<HashMap<String, Any>>? = null){
-    var fakeUrl : String? = ""
 
-    fun url() : String?{
-        if(!categories.isNullOrEmpty()){
-            val icon = categories.get(0)["icon"] as LinkedTreeMap<String,String>
-            return "${icon["prefix"]}64${icon["suffix"]}"
+
+
+    fun url() : String? {
+        categories?.let { categorylist ->
+            if(!categorylist.isNullOrEmpty()){
+                var best = categorylist[0]
+                if(best.containsKey("width") && best["width"] is Double){
+                    val width = "${best.get("width")}".toDouble().toInt()
+                    val height = "${best.get("height")}".toDouble().toInt()
+                    return "${best.get("prefix")}${width}x${height}${best.get("suffix")}"
+                }
+                return best.get("suffix").toString()
+            }
         }
-        return fakeUrl
+        return ""
     }
+
 
 
 }

@@ -21,7 +21,7 @@
 
         <ImageView
             android:id="@+id/venue_item_image"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/venue_item_image_height"
             android:layout_height="@dimen/venue_item_image_height"
             android:layout_margin="@dimen/cardview_default_radius"
             android:contentDescription="@string/a11y_venue_item_image"
@@ -39,6 +39,7 @@
             android:layout_marginEnd="@dimen/margin_small"
             android:layout_marginStart="@dimen/margin_small"
             android:layout_marginTop="@dimen/margin_small"
+            android:gravity="center_horizontal"
             android:text="@{venue.venue.name}"
             android:textAppearance="?attr/textAppearanceListItem"
             android:textColor="@color/cardview_light_background"

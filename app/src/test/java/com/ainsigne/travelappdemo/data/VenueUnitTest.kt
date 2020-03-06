@@ -86,7 +86,12 @@ class VenueUnitTest {
 
         val venueDetails = VenueDetails(id = VenueDetailID, name = VenueDetailName,
             description = VenueDetailDesc)
-        venueDetails.fakeUrl = VenueDetailPic
+        venueDetails.bestPhoto = HashMap<String,Any>()
+
+        venueDetails.bestPhoto?.put("suffix", VenueDetailPic)
+        venueDetails.bestPhoto?.put("width","")
+        venueDetails.bestPhoto?.put("height","")
+        venueDetails.bestPhoto?.put("prefix","")
         detailsRepo.insert(venueDetails)
         detailsRepo.getVenueDetail(VenueDetailID).value?.let {
             assertTrue(it.id == VenueDetailID)
@@ -109,8 +114,13 @@ class VenueUnitTest {
         observeVenueChanges(lifecycle,observer)
 
 
-        val venue = Venue(id = VenueIDSList[8] , name = VenueNamesList[8], categories = null)
-        venue.fakeUrl = VenueIconsList[8]
+        val venue = Venue(id = VenueIDSList[8] , name = VenueNamesList[8], categories = ArrayList<HashMap<String,Any>>())
+        venue.categories?.let {
+            it[0]["suffix"] = VenuePicsList[8]
+            it[0]["width"] = ""
+            it[0]["height"] = ""
+            it[0].put("prefix","")
+        }
         val venueItem = VenueItem(venueItemId = VenueIDSList[8].toInt(),venue = venue)
         repository.insertVenueItem(venueItem)
         // verify that it is added and it is the same list that is being updated meaning the repository works!
