@@ -88,7 +88,7 @@ class VenueDetailsFragment : Fragment() {
             } else {
                 shareText =  "Check out the ${venueDetail.name} in Andre\\'s TravelDemoApp"
 
-                img_to_map.setOnClickListener {
+                navigate_to_map.setOnClickListener {
                     venueDetail.latLng()?.let {latLng ->
 
                         val direction = VenueDetailsFragmentDirections.actionItemsFragmentToVenueLocationFragment(origin = args.origin , dest = latLng)

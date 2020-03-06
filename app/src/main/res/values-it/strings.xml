@@ -1,6 +1,7 @@
 
 <resources>
     <string name="app_name">TravelAppDemo</string>
+    <string name="navigate_to_map">View Directions</string>
     <string name="menu_filter_by_distance">Filtra per distanza</string>
     <string name="venue_detail_image_content_description">Immagine della sede</string>
     <string name="my_venue_title">I miei locali</string>

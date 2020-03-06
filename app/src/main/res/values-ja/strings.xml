@@ -1,4 +1,5 @@
 <resources>
+    <string name="navigate_to_map">View Directions</string>
     <string name="menu_filter_by_distance">距離でフィルター</string>
     <string name="venue_detail_image_content_description">会場の画像</string>
     <string name="my_venue_title">私の会場</string>

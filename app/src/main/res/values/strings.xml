@@ -3,7 +3,7 @@
     <!-- Resources that do not require translation -->
     <string name="app_name" translatable="false">TravelAppDemo</string>
     <string name="navigation_drawer_header_title" translatable="false">TravelAppDemo</string>
-
+    <string name="navigate_to_map">View Directions</string>
     <!-- Translatable resources -->
     <string name="menu_filter_by_distance" translation_description="The label for the menu item to filter
     the displayed venues by distance.">Filter by distance</string>
