@@ -6,8 +6,8 @@ import android.location.LocationListener
 import android.os.Bundle
 import android.util.Log
 import android.view.*
-import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.ainsigne.travelappdemo.MainActivity
 import com.ainsigne.travelappdemo.R
@@ -17,8 +17,11 @@ import com.ainsigne.travelappdemo.api.GPSTracker
 import com.ainsigne.travelappdemo.data.TravelLocations
 import com.ainsigne.travelappdemo.data.VenueItemsRepository
 import com.ainsigne.travelappdemo.databinding.FragmentVenueItemsBinding
+import com.ainsigne.travelappdemo.fake.FakeVenueItemsRepository
+import com.ainsigne.travelappdemo.utils.InjectorUtils
 import com.ainsigne.travelappdemo.utils.LocationUtils
 import com.ainsigne.travelappdemo.viewmodels.VenueItemsViewModel
+import com.ainsigne.travelappdemo.viewmodels.VenueItemsViewModelFactory
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -30,28 +33,43 @@ import javax.inject.Inject
  */
 class VenueItemsFragment : Fragment(), LocationListener {
 
+     @Inject lateinit var viewModel : VenueItemsViewModel
+
+     @Inject lateinit var repo : VenueItemsRepository
+
+//    var repo = FakeVenueItemsRepository()
+//
+//    private val viewModel : VenueItemsViewModel by viewModels {
+//        InjectorUtils.provideVenueItemsViewModelFactory(requireContext())
+//    }
+
+
     //@field:[Inject Named("VenueItems")] lateinit var viewModel: VenueItemsViewModel
 
     //@field:[Inject Named("FakeVenueItems")] lateinit var viewModel: VenueItemsViewModel
 
-    @Inject lateinit var viewModel : VenueItemsViewModel
 
-    @Inject lateinit var repo : VenueItemsRepository
+
+
+    //    private val venueFavesViewModel: VenueFavoritesViewModel by viewModels {
+//        InjectorUtils.provideVenueFavoritesViewModelFactory(requireContext())
+//    }
 
     //@field:[Inject Named("VenueItemsRepo")] lateinit var repo : VenueItemsRepository
 
     //@field:[Inject Named("FakeVenueItemsRepo")] lateinit var repo : FakeVenueItemsRepository
 
 
-//    val lat = 14.588810
-//
-//
-//    val lon = 121.063843
-    lateinit var gpsTracker : GPSTracker
 
-    var lat = 14.539820
-    var lon = 121.015367
-    val travelLocations = TravelLocations()
+
+    private lateinit var gpsTracker : GPSTracker
+
+
+
+    private var lat = 14.593652
+    private var lon = 121.058283
+    private val travelLocations = TravelLocations()
+    lateinit var adapter : VenueAdapter
     @Inject
     lateinit var foursquare : FoursquareAPI
 
@@ -64,9 +82,9 @@ class VenueItemsFragment : Fragment(), LocationListener {
         val binding = FragmentVenueItemsBinding.inflate(inflater, container, false)
         context ?: return binding.root
         (context as MainActivity).activityComponent.inject(this)
-        val adapter = VenueAdapter()
+        adapter = VenueAdapter()
         binding.venueList.adapter = adapter
-        subscribeUi(adapter)
+
         setHasOptionsMenu(true)
         return binding.root
     }
@@ -74,7 +92,9 @@ class VenueItemsFragment : Fragment(), LocationListener {
     override fun onLocationChanged(location: Location) {
         lat = location.latitude
         lon = location.longitude
-        Log.d(" Location Changed "," Location Changed $lat $lon")
+        activity?.runOnUiThread {
+            subscribeUi(adapter)
+        }
     }
     override fun onProviderDisabled(provider: String) {
 
@@ -100,13 +120,10 @@ class VenueItemsFragment : Fragment(), LocationListener {
                 // If request is cancelled, the result arrays are empty.
                 if (grantResults.isNotEmpty()
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED
-                ) { // permission was granted, yay! Do the
-// contacts-related task you need to do.
+                ) {
                     gpsTracker.generateLocation()
 
-                } else { // permission denied, boo! Disable the
-// functionality that depends on this permission.
-
+                } else {
                 }
                 return
             }
@@ -115,8 +132,7 @@ class VenueItemsFragment : Fragment(), LocationListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         this.activity?.let {
-            gpsTracker = GPSTracker(it, this)
-
+            gpsTracker = GPSTracker(it, this, this)
         }
 
     }
@@ -152,7 +168,6 @@ class VenueItemsFragment : Fragment(), LocationListener {
             }
             else
             {
-                Log.d(" Starting API "," Starting API ")
                 startAPI()
             }
         }

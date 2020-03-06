@@ -62,6 +62,7 @@ class VenueLocationFragment : Fragment(), OnMapReadyCallback {
                 args.origin,
                 args.dest
             )
+
             if(response.isSuccessful){
                 Log.d(" Response "," Response Success ${response.body()} ${response.raw()}")
                 response.body()?.let { data ->

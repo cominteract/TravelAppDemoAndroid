@@ -1,10 +1,12 @@
 package com.ainsigne.travelappdemo.fake
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.ainsigne.travelappdemo.data.*
 import com.ainsigne.travelappdemo.interfaces.ItemRepository
 import com.ainsigne.travelappdemo.utils.*
+import com.google.gson.internal.LinkedTreeMap
 
 /**
  * Fake repository module for handling data operations for [VenueItem].
@@ -28,7 +30,7 @@ class FakeVenueItemsRepository : ItemRepository {
 //            }
 //        }
     private val allVenues = ArrayList<VenueItem>()
-    val venueLiveData = MutableLiveData<List<VenueItem>>()
+    private val venueLiveData = MutableLiveData<List<VenueItem>>()
     init {
         generateVenues()
     }
@@ -39,15 +41,17 @@ class FakeVenueItemsRepository : ItemRepository {
         if(allVenues.isEmpty()){
             for(i in VenueDescList.indices){
 
-                var lat = randomLatLng[i].latitude
-                var lon = randomLatLng[i].longitude
+                var lat = randomLatLng[0].latitude
+                var lon = randomLatLng[0].longitude
                 val venue = Venue(id = VenueIDSList[i] , name = VenueNamesList[i], categories = ArrayList<HashMap<String,Any>>())
-
+                venue.categories?.add(HashMap<String, Any>())
                 venue.categories?.let {
-                    it[0]["suffix"] = VenuePicsList[i]
-                    it[0]["width"] = ""
-                    it[0]["height"] = ""
-                    it[0].put("prefix","")
+                    it[0]["icon"] = LinkedTreeMap<String, Any>()
+                    (it[0]["icon"] as LinkedTreeMap<String, Any>)["suffix"] = VenueIconsList[i]
+
+                    (it[0]["icon"] as LinkedTreeMap<String, Any>)["width"] = ""
+                    (it[0]["icon"] as LinkedTreeMap<String, Any>)["height"] = ""
+                    (it[0]["icon"] as LinkedTreeMap<String, Any>)["prefix"] = ""
                 }
 
                 val venueItem = VenueItem(venueItemId = VenueIDSList[i].toInt(), venue = venue, latlng = "${lat},${lon}")
@@ -70,6 +74,7 @@ class FakeVenueItemsRepository : ItemRepository {
     }
 
     override fun getNearbyVenueItems(travelLocations: TravelLocations): LiveData<List<VenueItem>> {
+
         venueLiveData.value = allVenues.filter { it.latlng == "${travelLocations.lat},${travelLocations.lon}"}
         return venueLiveData
     }
@@ -88,8 +93,8 @@ class FakeVenueItemsRepository : ItemRepository {
     override fun getTravelLocations() : LiveData<List<TravelLocations>> {
         val liveData = MutableLiveData<List<TravelLocations>>()
         val travelLocations = ArrayList<TravelLocations>()
-        val lat = 40.7243
-        val lon = -74.0018
+        val lat = randomLatLng[0].latitude
+        val lon = randomLatLng[0].longitude
         travelLocations.add(TravelLocations(1,lat,lon))
         liveData.value = travelLocations
         return liveData

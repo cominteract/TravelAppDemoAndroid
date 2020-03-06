@@ -13,10 +13,11 @@ import android.provider.Settings
 import android.util.Log
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 
 
-class GPSTracker(private val mContext: FragmentActivity, val locationListener: LocationListener) {
+class GPSTracker(private val mContext: FragmentActivity, val locationListener: LocationListener, var fragment : Fragment) {
     // flag for GPS status
     var isGPSEnabled = false
     // flag for network status
@@ -71,7 +72,7 @@ class GPSTracker(private val mContext: FragmentActivity, val locationListener: L
                         }
                     }
                     else {
-                        ActivityCompat.requestPermissions(mContext,
+                        fragment.requestPermissions(
                             arrayOf(Manifest.permission.ACCESS_FINE_LOCATION) ,
                             1)
                         Log.d("Network Failed ", "Network Failed")
@@ -99,7 +100,7 @@ class GPSTracker(private val mContext: FragmentActivity, val locationListener: L
                         }
                         else {
                             Log.d("GPS Failed ", "GPS Failed")
-                            ActivityCompat.requestPermissions(mContext,
+                            fragment.requestPermissions(
                                 arrayOf(Manifest.permission.ACCESS_FINE_LOCATION) ,
                                 1)
 

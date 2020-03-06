@@ -1,6 +1,7 @@
 package com.ainsigne.travelappdemo.utils
 
 import android.location.Location
+import android.util.Log
 import com.ainsigne.travelappdemo.data.TravelLocations
 import com.google.android.gms.maps.model.LatLng
 
@@ -23,7 +24,7 @@ class LocationUtils {
             val locationEnd = Location("End")
             locationEnd.latitude = destination.latitude
             locationEnd.longitude = destination.longitude
-
+            Log.d(" Starting API "," Starting API ${locationStart.distanceTo(locationEnd)}")
             return locationStart.distanceTo(locationEnd) < 500
         }
 

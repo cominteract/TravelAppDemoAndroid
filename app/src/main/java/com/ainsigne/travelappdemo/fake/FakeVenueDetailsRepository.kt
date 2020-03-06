@@ -4,10 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.ainsigne.travelappdemo.data.VenueDetails
 import com.ainsigne.travelappdemo.interfaces.DetailRepository
-import com.ainsigne.travelappdemo.utils.VenueDescList
-import com.ainsigne.travelappdemo.utils.VenueIDSList
-import com.ainsigne.travelappdemo.utils.VenueNamesList
-import com.ainsigne.travelappdemo.utils.VenuePicsList
+import com.ainsigne.travelappdemo.utils.*
 import kotlin.collections.ArrayList
 
 
@@ -27,7 +24,10 @@ class FakeVenueDetailsRepository :
             for(i in VenueDescList.indices){
                 val venueDetails = VenueDetails(id = VenueIDSList[i], name = VenueNamesList[i], description = VenueDescList[i])
                 venueDetails.bestPhoto = HashMap<String,Any>()
-
+                venueDetails.location = HashMap<String,Any>()
+                venueDetails.location?.put("lat",randomLatLng[i].latitude)
+                venueDetails.location?.put("lng",randomLatLng[i].longitude)
+                venueDetails.location?.put("lon",randomLatLng[i].longitude)
                 venueDetails.bestPhoto?.put("suffix",VenuePicsList[i])
                 venueDetails.bestPhoto?.put("width","")
                 venueDetails.bestPhoto?.put("height","")

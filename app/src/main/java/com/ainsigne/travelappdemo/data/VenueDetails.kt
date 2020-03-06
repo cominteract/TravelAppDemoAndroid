@@ -42,7 +42,7 @@ data class VenueDetails(
 
     fun latLng() : String?{
         if(!location.isNullOrEmpty()){
-            return "${location?.get("lat").toString()},${location?.get("lng ").toString()}"
+            return "${location?.get("lat").toString()},${location?.get("lng").toString()}"
 
         }
         return ""

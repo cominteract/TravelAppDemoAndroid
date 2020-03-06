@@ -1,5 +1,6 @@
 package com.ainsigne.travelappdemo.adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,6 +38,7 @@ class VenueAdapter : ListAdapter<VenueItem, VenueAdapter.ViewHolder>(VenueDiffCa
 
     private fun createOnClickListener(venueItemId: String, latLng : String): View.OnClickListener {
         return View.OnClickListener {
+
             val direction = VenueItemsFragmentDirections.actionItemsFragmentToVenueDetailFragment(venueId = venueItemId, origin = latLng)
             it.findNavController().navigate(direction)
         }

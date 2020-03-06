@@ -36,6 +36,15 @@ class VenueDetailsFragment : Fragment() {
 
     private val args: VenueDetailsFragmentArgs by navArgs()
 
+
+    @Inject lateinit var repo : VenueDetailsRepository
+
+    @Inject  lateinit var faveRepo : VenueFavoritesRepository
+
+//    var repo = FakeVenueDetailsRepository()
+//    var faveRepo = FakeVenueFavoritesRepository()
+
+
     //@field:[Inject Named("VenueDetailsRepo")] lateinit var repo : VenueDetailsRepository
 
     //@field:[Inject Named("FakeVenueDetailsRepo")] lateinit var repo : FakeVenueDetailsRepository
@@ -45,9 +54,7 @@ class VenueDetailsFragment : Fragment() {
     //@field:[Inject Named("FakeVenueFavesRepo")] lateinit var faveRepo : FakeVenueFavoritesRepository
 
 
-    @Inject lateinit var repo : VenueDetailsRepository
 
-    @Inject  lateinit var faveRepo : VenueFavoritesRepository
 
     private lateinit var detailsViewModel: VenueDetailsViewModel
 
@@ -83,6 +90,7 @@ class VenueDetailsFragment : Fragment() {
 
                 img_to_map.setOnClickListener {
                     venueDetail.latLng()?.let {latLng ->
+
                         val direction = VenueDetailsFragmentDirections.actionItemsFragmentToVenueLocationFragment(origin = args.origin , dest = latLng)
                         it.findNavController().navigate(direction)
                     }

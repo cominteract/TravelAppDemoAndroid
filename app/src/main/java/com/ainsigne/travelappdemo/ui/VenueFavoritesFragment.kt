@@ -6,12 +6,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.ainsigne.travelappdemo.MainActivity
 import com.ainsigne.travelappdemo.adapters.VenueFavesAdapter
 import com.ainsigne.travelappdemo.data.VenueFavoritesRepository
 import com.ainsigne.travelappdemo.data.VenueItemsRepository
 import com.ainsigne.travelappdemo.databinding.FragmentVenueFavoritesBinding
+import com.ainsigne.travelappdemo.utils.InjectorUtils
 import com.ainsigne.travelappdemo.viewmodels.VenueFavoritesViewModel
 import javax.inject.Inject
 import javax.inject.Named
@@ -21,7 +23,9 @@ import javax.inject.Named
  */
 class VenueFavoritesFragment : Fragment() {
 
-//
+
+ @Inject lateinit var venueFavesViewModel : VenueFavoritesViewModel
+
 //    private val venueFavesViewModel: VenueFavoritesViewModel by viewModels {
 //        InjectorUtils.provideVenueFavoritesViewModelFactory(requireContext())
 //    }
@@ -34,7 +38,8 @@ class VenueFavoritesFragment : Fragment() {
 //    @field:[Inject Named("VenueFavorites")]
 //    lateinit var venueFavesViewModel : VenueFavoritesViewModel
 
-    @Inject lateinit var venueFavesViewModel : VenueFavoritesViewModel
+
+
 
 
 //    @field:[Inject Named("FakeVenueFavorites")]

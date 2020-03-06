@@ -1,5 +1,6 @@
 package com.ainsigne.travelappdemo.data
 
+import android.util.Log
 import androidx.room.ColumnInfo
 import androidx.room.Embedded
 import androidx.room.Entity
@@ -34,13 +35,14 @@ data class Venue(val id : String, val name : String,
     fun url() : String? {
         categories?.let { categorylist ->
             if(!categorylist.isNullOrEmpty()){
-                var best = categorylist[0]
-                if(best.containsKey("width") && best["width"] is Double){
-                    val width = "${best.get("width")}".toDouble().toInt()
-                    val height = "${best.get("height")}".toDouble().toInt()
-                    return "${best.get("prefix")}${width}x${height}${best.get("suffix")}"
+
+                var icon = categorylist[0]["icon"] as? LinkedTreeMap<*, *>?
+                icon?.let {best ->
+                    if(best.containsKey("prefix") && best.containsKey("suffix") && best["prefix"] != ""){
+                        return "${best.get("prefix")}64${best.get("suffix")}"
+                    }
+                    return best["suffix"].toString()
                 }
-                return best.get("suffix").toString()
             }
         }
         return ""
