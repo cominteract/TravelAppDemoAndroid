@@ -22,6 +22,7 @@ import com.ainsigne.travelappdemo.utils.InjectorUtils
 import com.ainsigne.travelappdemo.utils.LocationUtils
 import com.ainsigne.travelappdemo.viewmodels.VenueItemsViewModel
 import com.ainsigne.travelappdemo.viewmodels.VenueItemsViewModelFactory
+import kotlinx.android.synthetic.main.fragment_venue_items.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -122,8 +123,10 @@ class VenueItemsFragment : Fragment(), LocationListener {
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED
                 ) {
                     gpsTracker.generateLocation()
+                    tv_cover.visibility = View.GONE
 
                 } else {
+                    tv_cover.visibility = View.VISIBLE
                 }
                 return
             }
@@ -133,6 +136,7 @@ class VenueItemsFragment : Fragment(), LocationListener {
         super.onViewCreated(view, savedInstanceState)
         this.activity?.let {
             gpsTracker = GPSTracker(it, this, this)
+            tv_cover.visibility = View.VISIBLE
         }
 
     }
