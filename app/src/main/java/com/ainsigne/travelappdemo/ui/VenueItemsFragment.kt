@@ -94,6 +94,7 @@ class VenueItemsFragment : Fragment(), LocationListener {
         lat = location.latitude
         lon = location.longitude
         activity?.runOnUiThread {
+            tv_cover.visibility = View.GONE
             subscribeUi(adapter)
         }
     }
