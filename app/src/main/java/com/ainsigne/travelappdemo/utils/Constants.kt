@@ -1,5 +1,6 @@
 package com.ainsigne.travelappdemo.utils
 
+import android.os.Build
 import com.google.android.gms.maps.model.LatLng
 
 
@@ -16,6 +17,25 @@ val VenueDetailDesc = "Dominique Ansel Bakery was awarded Time Out New York’s 
 val VenueDetailPic = "https://fastly.4sqi.net/img/general/610x458/20902261_pnuwMwg6Sy8j4f-riRALZPblMpQ0cRGADLXWlNlwJCs.jpg"
 val VenueDetailIcon = "https://ss3.4sqi.net/img/categories_v2/food/bakery_64.png"
 
+
+fun isEmulator(): Boolean {
+    return (Build.BRAND.startsWith("generic") && Build.DEVICE.startsWith("generic")
+            || Build.FINGERPRINT.startsWith("generic")
+            || Build.FINGERPRINT.startsWith("unknown")
+            || Build.HARDWARE.contains("goldfish")
+            || Build.HARDWARE.contains("ranchu")
+            || Build.MODEL.contains("google_sdk")
+            || Build.MODEL.contains("Emulator")
+            || Build.MODEL.contains("Android SDK built for x86")
+            || Build.MANUFACTURER.contains("Genymotion")
+            || Build.PRODUCT.contains("sdk_google")
+            || Build.PRODUCT.contains("google_sdk")
+            || Build.PRODUCT.contains("sdk")
+            || Build.PRODUCT.contains("sdk_x86")
+            || Build.PRODUCT.contains("vbox86p")
+            || Build.PRODUCT.contains("emulator")
+            || Build.PRODUCT.contains("simulator"))
+}
 
 val VenueIDSList = arrayOf("1","2","3",
     "4","5", "6",

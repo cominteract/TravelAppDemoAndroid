@@ -9,6 +9,7 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
+import com.ainsigne.travelappdemo.BuildConfig
 import com.ainsigne.travelappdemo.MainActivity
 import com.ainsigne.travelappdemo.R
 import com.ainsigne.travelappdemo.adapters.VenueAdapter
@@ -18,8 +19,10 @@ import com.ainsigne.travelappdemo.data.TravelLocations
 import com.ainsigne.travelappdemo.data.VenueItemsRepository
 import com.ainsigne.travelappdemo.databinding.FragmentVenueItemsBinding
 import com.ainsigne.travelappdemo.fake.FakeVenueItemsRepository
+import com.ainsigne.travelappdemo.utils.FAKE_BUILD
 import com.ainsigne.travelappdemo.utils.InjectorUtils
 import com.ainsigne.travelappdemo.utils.LocationUtils
+import com.ainsigne.travelappdemo.utils.isEmulator
 import com.ainsigne.travelappdemo.viewmodels.VenueItemsViewModel
 import com.ainsigne.travelappdemo.viewmodels.VenueItemsViewModelFactory
 import kotlinx.android.synthetic.main.fragment_venue_items.*
@@ -93,6 +96,7 @@ class VenueItemsFragment : Fragment(), LocationListener {
     override fun onLocationChanged(location: Location) {
         lat = location.latitude
         lon = location.longitude
+        Log.d("Location Changed ","Location Changed ")
         activity?.runOnUiThread {
             tv_cover.visibility = View.GONE
             subscribeUi(adapter)
@@ -138,6 +142,11 @@ class VenueItemsFragment : Fragment(), LocationListener {
         this.activity?.let {
             gpsTracker = GPSTracker(it, this, this)
             tv_cover.visibility = View.VISIBLE
+            if(BuildConfig.FLAVOR ==  FAKE_BUILD || isEmulator()){
+                tv_cover.visibility = View.GONE
+                subscribeUi(adapter)
+            }
+
         }
 
     }
@@ -181,7 +190,7 @@ class VenueItemsFragment : Fragment(), LocationListener {
     private fun startAPI()
     {
 
-
+        Log.d(" Starting API "," Starting API ")
         val locationQuery = LocationUtils.locationQuery(lat,lon)
         CoroutineScope(Dispatchers.IO).launch {
             val response = foursquare.webservice.getVenueItems(ll = locationQuery )

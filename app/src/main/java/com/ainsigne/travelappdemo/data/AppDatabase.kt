@@ -7,7 +7,7 @@ import androidx.room.TypeConverters
 /**
  * The Room database for this app
  */
-@Database(entities = [VenueFavorites::class, VenueDetails::class, VenueItem::class, TravelLocations::class], version = 1, exportSchema = false)
+@Database(entities = [VenueFavorites::class, VenueDetails::class, VenueItem::class, TravelLocations::class], version = 2, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     /**
